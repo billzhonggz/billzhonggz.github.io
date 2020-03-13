@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Junru Zhong">
+
+
+
+    <meta name="description" content="A master student. An enthusiastic of computer science, photography, and sociology.">
+
+
+
+<title>Motion Capture Robot Arm | Junru Zhong</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Junru Zhong</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Junru Zhong</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Motion Capture Robot Arm</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Junru Zhong</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 27, 2018&nbsp;&nbsp;9:11:02</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Project/">Project</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <video style="width: 100%;" src="https://bill-main-1251735069.cosgz.myqcloud.com/Leap-Motion-Robot-Arm.mp4" controls preload="none">
+You see this text because your browser does not support embedded videos. But you can still click [here](http://bill-main-1251735069.cosgz.myqcloud.com/Leap-Motion-Robot-Arm.mp4) to download this video.
+</video>
+
+<p>The <strong>Motion Capture Robot Arm</strong> is a 3D printed robot arm, controlled by <a href="https://www.leapmotion.com/" target="_blank" rel="noopener">Leap Motion</a>. The basic logic is, Leap Motion captures the motion of operator’s hand, then covert fingers’ vectors to angles and output to <a href="https://www.arduino.cc/" target="_blank" rel="noopener">Arduino</a>, finally the Arduino gives control signals to servos and servos power the fingers on the robot arm.</p>
+<h2 id="Hardware"><a href="#Hardware" class="headerlink" title="Hardware"></a>Hardware</h2><p>There are two parts of hardware in this project. Leap Motion and the robot arm. The hardware part was mostly done by <a href="https://github.com/wjqzero" target="_blank" rel="noopener">Garfield Wu</a>.</p>
+<h3 id="Leap-Motion"><a href="#Leap-Motion" class="headerlink" title="Leap Motion"></a>Leap Motion</h3><p><img src="/assets/robot-arm/leap-monitor.jpg" alt="Leap Monitor"></p>
+<p>Leap Motion is a hardware with two infrared cameras launched in 2013. It can capture motions on two human hands and it has a well-encapsulated interfaces help developers find the “hands” quickly.</p>
+<h3 id="Robot-Arm"><a href="#Robot-Arm" class="headerlink" title="Robot Arm"></a>Robot Arm</h3><p><img src="/assets/robot-arm/3d-printed-part.png" alt="3D Printed Parts"> </p>
+<p>The robot arm was 3D printed and the model we used can be found <a href="https://hackaday.io/project/102439-robot-hand-bionic-hand-prosthesis-prototype" target="_blank" rel="noopener">here</a> (a big thank to the author :)).</p>
+<p><img src="/assets/robot-arm/print-failed.jpg" alt="failed print"></p>
+<p>But we quickly found out the product we made was hard to use. Due to printers’ precision, most of the parts we printed cannot be used immediately and the printing process always fails. Before we could assemble the arm, we had to sand the surfaces to ensure all parts can move smoothly (kind of :joy:).</p>
+<p>The fingers are powered by servos. Servos are installed inside the stand. And each finger is connected with a servo by fishing wire. By sending angles to Arduino, the included standard servo library can convert the angles to PWM singles, and the servos can turn to the angles pointed.</p>
+<p>The parameters of converting finger angles to servo angles set differently for different servos. We spent some time on tuning these parameters.</p>
+<h2 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h2><p>In software side, I looked at the code from acali (check out <a href="http://www.instructables.com/id/Robotic-Hand-controlled-by-Gesture-with-Arduino-Le/" target="_blank" rel="noopener">here</a>). He provided us with an easy way to finish this project. </p>
+<p>We follow the acali’s idea, applied a tech stack base on Node.js because I have done a Node.js project <a href="/project/2018/07/27/se-system.html">SE Retail Management System</a>. The project applies the following frameworks to achieve its logic.</p>
+<ul>
+<li>Leap Motion’s LeapJS API <a href="https://github.com/leapmotion/leapjs" target="_blank" rel="noopener">GitHub</a></li>
+<li>Johnny-Five JavaScript Robotics &amp; IoT Platform <a href="http://johnny-five.io/" target="_blank" rel="noopener">Website</a></li>
+<li>Firmata Arduino Library (included in Arduino IDE examples) <a href="https://github.com/firmata/arduino" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<p>Since I have the most experiences in software engineering, I was very happy to see this stack with libraries :).</p>
+<p>Both LeapJS and Jhonny-Five works on my computer, LeapJS gets finger vectors, then we calculate them to finger and servo angles, then send angles by serial ports with Johnny-Five library.</p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>At this moment, the robot arm can follow exactly what the human arm does. Because the all components are decoupled, we can easily switch any of them to achieve more functions. It can be entertaining.</p>
+<p>Here are some components can be switched or expanded.</p>
+<ul>
+<li>Servo controller: from Arduino to any other controller with PWM outputs.</li>
+<li>Transmission method of controlling signals: from USB serial port to WiFi, Bluetooth, or cellular.</li>
+<li>Motion capture: from Leap Motion to <a href="https://developer.microsoft.com/en-us/windows/kinect" target="_blank" rel="noopener">Kinect</a>, <a href="https://software.intel.com/realsense" target="_blank" rel="noopener">Intel RealSense</a>, or double cameras (multi-view) with <a href="https://opencv.org/" target="_blank" rel="noopener">OpenCV</a>.</li>
+<li>Actions toward motions: from simple imitation to reaction to some condition. Like <a href="https://en.wikipedia.org/wiki/Morra_(game)" target="_blank" rel="noopener">Morra game</a>.</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Junru Zhong</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://junru.dev/2018/07/27/robot-arm/">https://junru.dev/2018/07/27/robot-arm/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        <a href="/tags/UIC/"># UIC</a>
+                    
+                        <a href="/tags/CST/"># CST</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2018/07/27/env-system/">Environment Monitoring System</a>
+            
+            
+            <a class="next" rel="next" href="/2018/03/18/CST%E4%B8%A4%E4%B8%89%E4%BA%8B/">CST两三事</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Junru Zhong | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

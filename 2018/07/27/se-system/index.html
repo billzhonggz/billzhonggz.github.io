@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Junru Zhong">
+
+
+
+    <meta name="description" content="A master student. An enthusiastic of computer science, photography, and sociology.">
+
+
+
+<title>SE Retail Management System | Junru Zhong</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Junru Zhong</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Junru Zhong</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">SE Retail Management System</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Junru Zhong</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 27, 2018&nbsp;&nbsp;13:23:36</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Project/">Project</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>This is the final year project at my college, it researches a software engineering topic. Its full name is: <strong>Retail Management System: A Case Study on Agile Development Methods</strong>. It is definitely too long for a page title… :joy:</p>
+<p>I wrote a 60-page thesis for this project, contact me if you are interested in it.</p>
+<p>I call this project “SE Retail Management” everywhere. The phrase “SE” comes from “<a href="#social-enterprise">Social Enterprise</a>“, the “customer” of this project. I was working with <a href="https://github.com/HuBeichen1" target="_blank" rel="noopener">Alan Hu</a>, applying all we know about software engineering, and trying to make this system prefect.</p>
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>The topic was raised half by myself, and half by my friend who owned a social enterprise at campus. He gave me a sketch of the system and I wanted to test the popular agile software development method.</p>
+<p>We confirmed out topic with the instructor in March 2017, and began a research on agile methods.</p>
+<h3 id="Social-Enterprise"><a href="#Social-Enterprise" class="headerlink" title="Social Enterprise"></a>Social Enterprise</h3><p>According to an article from the government of Hong Kong, “In general, a social enterprise is a business to achieve specific objectives such as providing services or product needed by the community [1].” Social enterprise was a live business my college. There were four social enterprises located at the campus when the project started. We choosed two of them to develop the system.</p>
+<h3 id="Investigating-Demands"><a href="#Investigating-Demands" class="headerlink" title="Investigating Demands"></a>Investigating Demands</h3><p>Since this project has a topic of “software engineering”, we began it from real demands. We did interviews with two shop managers, and found the following situations [2][3].</p>
+<p><strong>Both of them were in retail business.</strong> Two shops was selling different kinds of items. One sold fruits and packed food, the other sold used books.</p>
+<p><strong>But the items they sold have different features.</strong> This caused differences in their demands to the system. For fruit, weight units were always used to calculate prices but some system cannot accept floating numbers. For used books, each of them had a unique price tag base on its condition even they had same content.</p>
+<p><strong>We had to do customization base on those features.</strong></p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>[1] The Government of the Hong Kong Special Administrative Region, “Social Enterprises, introduction, what is social enterprises,” 2008. [Online]. Available: <a href="http://www.social-enterprises.gov.hk/en/introduction/whatis.html." target="_blank" rel="noopener">http://www.social-enterprises.gov.hk/en/introduction/whatis.html.</a> [Accessed 23 April 2017].</p>
+<p>[2] L. Fang, Interviewee, Introduction to Green Hut. [Interview]. 20 March 2017.</p>
+<p>[3] K. Chen, Interviewee, Introduction to UIC Ripple Three People Bookstore. [Interview]. 25 March 2017.</p>
+<p>[4] I. Sommerville, Software Engineering, Ninth Edition, Beijing: China Machine Press, 2011.</p>
+<p>[5] A. Stellman and J. Greene, Learning Agile, Nanjing: Southeast University Press, 2015.</p>
+<p>[6] Agile Alliance, “Agile Manifesto for Software Development,” 2015. [Online]. Available: <a href="https://www.agilealliance.org/agile101/the-agile-manifesto/." target="_blank" rel="noopener">https://www.agilealliance.org/agile101/the-agile-manifesto/.</a> [Accessed 27 April 2017].</p>
+<p>[7] Agile Alliance, “12 Principles Behind the Agile Manifesto,” 2015. [Online]. Available: <a href="https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/." target="_blank" rel="noopener">https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/.</a> [Accessed 27 April 2017].</p>
+<p>[8] B. Antunes, D. Santos, E. Lopes, F. Fidalgo and P. Alves, “Blisstrail: an agile project business case study,” Procedia Computer Science, vol. 64, pp. 529-536, 2015.</p>
+<p>[9] J. Patton, “Hitting the target: adding interaction design to agile software development,” OOPSLA ‘02 OOPSLA 2002 Practitioners Reports, 04-08 November 2002. </p>
+<p>[10] M. Habib, “Agile software development methodologies and how to apply them,” Code Project, 30 December 2013. [Online]. Available: <a href="https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t." target="_blank" rel="noopener">https://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t.</a> [Accessed 16 May 2017].</p>
+<p>[11] K. Schwaber and J. Sutherland, “The Scrum Guide,” July 2016. [Online]. Available: <a href="http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf." target="_blank" rel="noopener">http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf.</a> [Accessed 10 June 2017].</p>
+<p>[12] K. Beck and C. Andres, Extreme Programming Explained: embrace change (Second Edition), Beijing: Publishing House of Electionics Industry, 2006.</p>
+<p>[13] Vue.js, “Introduction - Vue.js,” [Online]. Available: <a href="https://vuejs.org/v2/guide/#What-is-Vue-js." target="_blank" rel="noopener">https://vuejs.org/v2/guide/#What-is-Vue-js.</a> [Accessed 10 June 2017].</p>
+<p>[14] O. McHugh, K. Conboy and M. Lang, “Agile Practices: The Impact on Trust in Software Project Teams,” IEEE Software, pp. 71-76, May-June 2012.</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Junru Zhong</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://junru.dev/2018/07/27/se-system/">https://junru.dev/2018/07/27/se-system/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        <a href="/tags/UIC/"># UIC</a>
+                    
+                        <a href="/tags/CST/"># CST</a>
+                    
+                        <a href="/tags/Final-Year-Project/"># Final Year Project</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/01/13/2019%E6%B8%AF%E5%A4%A7MScCS%E4%B8%93%E4%B8%9A%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95/">2019港大MScCS专业笔试面试</a>
+            
+            
+            <a class="next" rel="next" href="/2018/07/27/env-system/">Environment Monitoring System</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Junru Zhong | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

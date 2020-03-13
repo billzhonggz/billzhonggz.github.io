@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Junru Zhong">
+
+
+
+    <meta name="description" content="A master student. An enthusiastic of computer science, photography, and sociology.">
+
+
+
+<title>一点点很低端的技术细节 | Junru Zhong</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Junru Zhong</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Junru Zhong</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/projects">Projects</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/resume">Résumé</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">一点点很低端的技术细节</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Junru Zhong</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 10, 2015&nbsp;&nbsp;21:16:43</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Tech/">Tech</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>此文讲述的是站长上一次建站的技术细节。</p>
+<a id="more"></a>
+
+<p>网站是重新建好了。看起来还不错，至少在我看来是这样。</p>
+<p>网站的底层毫无疑问是使用了最简单的WordPress。当然啦，因为WP是国外的系统，在国内用或多或少的会有一些问题。比如谷歌字体库的调用问题，最终是以后台改为调用360网站卫士的CDN和前台直接放弃谷歌字体库改用微软雅黑作为解决。</p>
+<p>关于域名，域名是在万网注册和备案的。我想我也不会干坏事，为什么不以备案来获得国内服务器的使用资格呢？</p>
+<p>关于主机，因为这个网站不是用来做乱七八糟的测试的，因此我只追求稳定。适逢万网大特价虚机不要钱，就这样，本站就host在万网的免费虚机上了。VPS什么的不是这个站的东西，至少不是www记录和@记录的东西（很难说以后我会不会增加其他的前缀解析去别的地方，再说吧~）。</p>
+<p>大概是这样。</p>
+<p>P.S. 万网的解析生效还是没有DNSPod的快……域名备案成功的邮件发到了老半天才能正常解析www记录……</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Junru Zhong</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://junru.dev/2015/02/10/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BE%88%E4%BD%8E%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82/">https://junru.dev/2015/02/10/%E4%B8%80%E7%82%B9%E7%82%B9%E5%BE%88%E4%BD%8E%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Tech/"># Tech</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2015/08/23/%E5%AF%B9%E5%AD%A6%E6%A0%A1IT%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE/">对学校IT服务的一些建议</a>
+            
+            
+            <a class="next" rel="next" href="/2014/04/27/%E8%8B%A5%E6%9C%89%E6%A2%A6%EF%BC%8C%E8%AF%B7%E5%89%8D%E8%BF%9B%E2%80%94%E2%80%94%E7%BB%99%E9%AB%98%E4%B8%AD%E5%AD%A6%E7%94%9F%E7%94%B5%E8%A7%86%E5%8F%B0%E7%AC%AC%E4%B8%80%E5%B1%8A%E6%88%90%E5%91%98%E5%AF%84%E8%AF%AD/">若有梦，请前进——给高中学生电视台第一届成员寄语</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Junru Zhong | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
