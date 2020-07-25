@@ -8,7 +8,7 @@ I am doing, and have been done many projects since I got my college studentship 
 
 ## Highlights
 
-- Scene Manipulation by GAN.
+- [Scene Manipulation by GAN](/projects/scene-manipulation.html).
 - [3D Printed Motion Capturing Robot Arm](/projects/robot-arm.html).
 - [An Intelligent and Interactive Environment Monitoring System with Air Vehicle](/projects/env-system.html).
     - Android Client Application, [GitHub](https://github.com/billzhonggz/EnvAircraftClient).
