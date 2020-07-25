@@ -4,6 +4,8 @@ layout: default
 
 # Environment Monitoring System
 
+> This project was done during Junru's bachelor study. With the support of CST programme, DST, UIC.
+
 <video style="width: 100%;" src="/assets/video/env-system.mp4" controls preload="none"></video>
 
 This is an environmental monitoring system with a 4-axis drone with sensors, and a web-based back-end server.

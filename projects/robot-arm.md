@@ -4,6 +4,8 @@ layout: default
 
 # Motion Capture Robot Arm
 
+> This project was done as the course project of robotic class at CST programme, DST, UIC.
+
 <video style="width: 100%;" src="/assets/video/Leap-Motion-Robot-Arm.mp4" controls preload="none"></video>
 
 The **Motion Capture Robot Arm** is a 3D printed robot arm, controlled by [Leap Motion](https://www.leapmotion.com/). The basic logic is, Leap Motion captures the motion of operator's hand, then covert fingers' vectors to angles and output to [Arduino](https://www.arduino.cc/), finally the Arduino gives control signals to servos and servos power the fingers on the robot arm.
