@@ -38,7 +38,13 @@ In this particular task, we used streetview images as the training set. But the 
 
 After we have 500,000 synthesized images from the trained generator, we trained boundaries on the attributes listed in SUNAttribute dataset [8] with Places365 CNN attribute predictor pre-trained on Places365 dataset [7]. In this step, the attribute predictor response for generating scores on each attribute for each synthesized image.
 
-For the training of the boundaries, we randomly sampled 2000 latent codes and corresponding images and scores for each boundary. The boundaries was treated as binary classification tasks in order to find the hyperplane that separate *exist* and *not exist* for one attribute in the space of latent codes (we use W latent space in StyleGAN2 [1]).
+For the training of the boundaries, we randomly sampled 2000 latent codes and corresponding images and scores for each boundary. The boundaries was treated as binary classification tasks in order to find the SVM hyperplane that separate *exist* and *not exist* for one attribute in the space of latent codes (we use W latent space in StyleGAN2 [1]).
+
+## Manipulating with Boundaries
+
+![](/assets/img/scene-manipulation/manipulate-latent-codes.png)
+
+
 
 ## References
 
